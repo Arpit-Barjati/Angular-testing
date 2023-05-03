@@ -1,0 +1,13 @@
+<div
+  class="border border-2 rounded p-2 user-container"
+  [ngClass]="user.isDeleted ? 'border-warning' : 'border-success'"
+>
+  <h2>{{ user.firstName + " " + user.lastName }}</h2>
+  <button
+    (click)="clickHandler(user.id)"
+    class="btn"
+    [ngClass]="buttonClass"
+  >
+    {{ title }}
+  </button>
+</div>
