@@ -1,0 +1,24 @@
+<div class="border p-2 rounded">
+  <h2>{{ user.firstName + " " + user.lastName }}</h2>
+  <p
+    [ngClass]="user.isDeleted ? 'text-warning' : 'text-success'"
+  >
+    {{ user.isDeleted ? "Deleted" : "Active" }}
+  </p>
+  <div class="row">
+    <p class="col-6">Login Id</p>
+    <p class="col-6">{{ user.login }}</p>
+  </div>
+  <div class="row">
+    <p class="col-6">First Name</p>
+    <p class="col-6">{{ user.firstName }}</p>
+  </div>
+  <div class="row">
+    <p class="col-6">Last name</p>
+    <p class="col-6">{{ user.lastName }}</p>
+  </div>
+  <div class="row">
+    <p class="col-6">Age</p>
+    <p class="col-6">{{ user.age }}</p>
+  </div>
+</div>

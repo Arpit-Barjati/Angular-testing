@@ -1,0 +1,11 @@
+.user-div{
+    margin-bottom: 10px;
+    height: 120px;
+    position: relative;
+}
+
+.details-button{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
